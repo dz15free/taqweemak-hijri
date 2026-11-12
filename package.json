@@ -1,0 +1,24 @@
+{
+  "name": "taqweemak-hijri",
+  "version": "1.0.0",
+  "description": "Umm al-Qura Hijri ↔ Gregorian dates, Saudi payment dates (salaries, Citizen Account, Social Security, pensions) and verified Gulf prayer-time methods. The engine behind taqweemak.com.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./hijri": "./src/hijri.js",
+    "./payments": "./src/payments.js",
+    "./prayer": "./src/prayer.js",
+    "./cities": "./src/cities.js"
+  },
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": { "test": "node test/verify.mjs" },
+  "dependencies": { "adhan": "^4.4.3" },
+  "engines": { "node": ">=18" },
+  "keywords": ["hijri", "umm-al-qura", "islamic-calendar", "saudi-arabia", "gulf", "prayer-times", "ramadan", "arabic", "citizen-account", "date-converter"],
+  "homepage": "https://taqweemak.com",
+  "repository": { "type": "git", "url": "git+https://github.com/dz15free/taqweemak-hijri.git" },
+  "bugs": { "url": "https://github.com/dz15free/taqweemak-hijri/issues" },
+  "author": "رؤوف سعد (https://taqweemak.com/about/#editor)",
+  "license": "MIT"
+}
